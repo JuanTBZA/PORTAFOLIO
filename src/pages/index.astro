@@ -8,13 +8,13 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- Sección de Bienvenida -->
   <section class="bg-gradient-to-b from-gray-900 to-gray-800 min-h-screen flex flex-col items-center justify-center text-white">
-    <h1 class="text-5xl font-extrabold mb-6 animate-fade-in">¡Hola! Soy <span class="text-yellow-300">Juan Tirado</span></h1>
+    <h1 class="text-5xl font-extrabold mb-6 animate-fade-in">¡Hola! Soy <span class="text-blue-500">Juan Tirado</span></h1>
     <p class="text-lg text-gray-300 mb-6 animate-fade-in">Desarrollador de software apasionado por soluciones creativas e innovadoras.</p>
     <div class="flex space-x-4 animate-fade-in-up">
-      <a href="#projects" class="px-8 py-3 bg-yellow-300 text-gray-900 font-semibold rounded-full shadow-md hover:bg-yellow-400 transition-transform transform hover:scale-105 smooth-scroll">
+      <a href="#projects" class="px-8 py-3 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-400 transition-transform transform hover:scale-105 smooth-scroll">
         Ver Proyectos
       </a>
-      <a href="#contact" class="px-8 py-3 bg-white text-gray-900 font-semibold rounded-full shadow-md hover:bg-gray-200 transition-transform transform hover:scale-105 smooth-scroll">
+      <a href="#contact" class="px-8 py-3 bg-gray-800 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 transition-transform transform hover:scale-105 smooth-scroll">
         Contáctame
       </a>
     </div>
@@ -26,16 +26,30 @@ import Layout from '../layouts/Layout.astro';
     <h2 class="text-4xl font-bold text-white text-center mb-12 animate-fade-in">Sobre mí</h2>
 
     <div class="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12">
+
       <!-- Foto de perfil -->
-      <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg hover:scale-105 transition-transform animate-fade-in-left">
-        <img src="/src/assets/profile.jpg"  alt="Foto de perfil" class="w-full h-full object-cover">
+
+      <div class="flex flex-col md:flex-col items-center animate-fade-in-left ">
+
+        <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg hover:scale-105 transition-transform mb-4 ">
+          <img src="/src/assets/profile.jpg"  alt="Foto de perfil" class="w-full h-full object-cover">
+        </div>
+
+        <div class="mt-4 flex justify-center md:justify-start gap-4 text-white">
+          <a target="_blank" href="https://www.linkedin.com/in/juan-tirado-boza/" class="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition">LinkedIn</a>
+          <a target="_blank" href="https://github.com/JuanTBZA/" class="bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700 transition">GitHub</a>
+        </div>
+
       </div>
+      
+
+
 
       <!-- Descripción y habilidades -->
       <div class="flex-1 text-center md:text-left animate-fade-in-right">
         <p class="text-lg text-gray-300 leading-relaxed mb-6">
-          Soy un desarrollador especializado en <span class="text-yellow-300 font-medium">Backend y desarrollo Móvil</span>. Tengo experiencia en 
-          <span class="text-yellow-300 font-medium">Laravel, MySQL, Tailwind CSS, Flutter, Firebase, SQLite y control de versiones con Git y GitHub</span>. 
+          Soy un desarrollador especializado en <span class="text-blue-400 font-medium">Backend y Desarrollo mobile</span>. Tengo habilidades en
+          <span class="text-blue-400 font-medium">resolución de problemas,  trabajo en equipo, adaptabilidad, gestión del tiempo y pensamiento crítico</span>. 
           Disfruto resolviendo problemas y aprendiendo cosas nuevas.
         </p>
 
@@ -81,69 +95,95 @@ import Layout from '../layouts/Layout.astro';
       <div class="absolute left-4 md:left-8 w-1 bg-gray-600 h-full animate-draw-line"></div>
 
       <!-- Experiencia 1 -->
-      <div class="flex items-start mb-8 animate-fade-in-right">
+      <div class="flex items-start mb-8 ">
         <!-- Punto en la línea -->
         <div class="absolute left-4 md:left-8 w-4 h-4 bg-blue-500 rounded-full z-10 -translate-x-1/2 mt-10"></div>
         <!-- Carta de experiencia -->
-        <div class="ml-12 md:ml-16 w-full px-6 py-8 bg-gray-700 rounded-lg shadow-lg">
+        <div class="ml-12 md:ml-16 w-full px-6 py-8 bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-95">
           <h3 class="text-2xl font-semibold text-white">Desarrollador Backend</h3>
-          <p class="text-gray-300">Empresa XYZ</p>
-          <p class="text-gray-400 text-sm">Enero 2021 - Presente</p>
-          <p class="text-gray-300 mt-4">
-            Responsable del desarrollo y mantenimiento de APIs robustas y escalables utilizando Laravel y MySQL. 
-            Colaboré en la optimización de bases de datos y en la implementación de soluciones de seguridad.
-          </p>
+          <p class="text-gray-300">Devdatep Consulting</p>
+          <p class="text-gray-400 text-sm">Noviembre 2024 - Presente</p>
+          <div class="text-gray-300 mt-4">
+            <ul class="list-disc pl-5">
+              <li>Desarrollo de APIs RESTful utilizando Laravel para integrar
+                funcionalidades en aplicaciones web.</li>
+              <li>Diseño e implementación de lógica de negocio y
+                conexiones con bases de datos MySQL.</li>
+              <li>Colaboración con equipos frontend y base de datos para
+                asegurar una integración eficiente y funcional.</li>
+            </ul>
+          </div>
           <div class="mt-4">
             <span class="text-sm text-gray-400">Tecnologías:</span>
             <div class="flex flex-wrap gap-2 mt-2">
               <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">Laravel</span>
+              <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">PHP</span>
               <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">MySQL</span>
               <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">Git</span>
+              <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">Github</span>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Experiencia 2 -->
-      <div class="flex items-start mb-8 animate-fade-in-right">
+      <div class="flex items-start mb-8 ">
         <!-- Punto en la línea -->
         <div class="absolute left-4 md:left-8 w-4 h-4 bg-blue-500 rounded-full z-10 -translate-x-1/2 mt-10"></div>
         <!-- Carta de experiencia -->
-        <div class="ml-12 md:ml-16 w-full px-6 py-8 bg-gray-700 rounded-lg shadow-lg">
+        <div class="ml-12 md:ml-16 w-full px-6 py-8 bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-95">
           <h3 class="text-2xl font-semibold text-white">Desarrollador Móvil</h3>
-          <p class="text-gray-300">Startup ABC</p>
-          <p class="text-gray-400 text-sm">Junio 2019 - Diciembre 2020</p>
-          <p class="text-gray-300 mt-4">
-            Lideré el desarrollo de aplicaciones móviles multiplataforma utilizando Flutter. Implementé integraciones 
-            con Firebase para autenticación, almacenamiento y notificaciones push.
-          </p>
+          <p class="text-gray-300">Canatiy Studios</p>
+          <p class="text-gray-400 text-sm">Noviembre 2023 - Noviembre 2024</p>
+          <div class="text-gray-300 mt-4">
+            <ul class="list-disc pl-5">
+              <li>Diseño y desarrollo de aplicaciones móviles utilizando
+                Flutter, optimizadas para dispositivos Android.</li>
+              <li>Implementación de interfaces de usuario diseñadas
+                previamente en Figma, garantizando una experiencia
+                intuitiva.</li>
+              <li>Manejo del ciclo completo de desarrollo móvil, incluyendo
+                pruebas y despliegue.</li>
+            </ul>
+          </div>
           <div class="mt-4">
             <span class="text-sm text-gray-400">Tecnologías:</span>
             <div class="flex flex-wrap gap-2 mt-2">
               <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">Flutter</span>
               <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">Firebase</span>
               <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">Dart</span>
+              <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">SQLite</span>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Experiencia 3 -->
-      <div class="flex items-start mb-8 animate-fade-in-right">
+      <div class="flex items-start mb-8 ">
         <!-- Punto en la línea -->
         <div class="absolute left-4 md:left-8 w-4 h-4 bg-blue-500 rounded-full z-10 -translate-x-1/2 mt-10"></div>
         <!-- Carta de experiencia -->
-        <div class="ml-12 md:ml-16 w-full px-6 py-8 bg-gray-700 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-semibold text-white">Practicante de Desarrollo Web</h3>
-          <p class="text-gray-300">Empresa DEF</p>
-          <p class="text-gray-400 text-sm">Marzo 2018 - Mayo 2019</p>
-          <p class="text-gray-300 mt-4">
-            Colaboré en el desarrollo de interfaces de usuario responsivas utilizando HTML, CSS y JavaScript. 
-            También participé en la creación de APIs RESTful con PHP.
-          </p>
+        <div class="ml-12 md:ml-16 w-full px-6 py-8 bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-95">
+          <h3 class="text-2xl font-semibold text-white"> Desarrollador Full-Stack Junior</h3>
+          <p class="text-gray-300">Freelance</p>
+          <p class="text-gray-400 text-sm">Octubre 2022 - Noviembre 2023</p>
+          <div class="text-gray-300 mt-4">
+            <ul class="list-disc pl-5">
+              <li>Desarrollo de aplicaciones web utilizando Java, Spring
+                Boot, PHP, Laravel, JavaScript, HTML y CSS.</li>
+              <li>Creación de páginas web desde cero, integrando bases de
+                datos MySQL y funcionalidades avanzadas.</li>
+              <li>Diseño y desarrollo back-end con Java para garantizar
+                experiencias de usuario eficientes y fluidas</li>
+            </ul>
+          </div>
           <div class="mt-4">
             <span class="text-sm text-gray-400">Tecnologías:</span>
             <div class="flex flex-wrap gap-2 mt-2">
+              <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">Java</span>
+              <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">Spring</span>
+              <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">PHP</span>
+              <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">Laravel</span>
               <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">HTML</span>
               <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">CSS</span>
               <span class="px-3 py-1 bg-gray-600 text-gray-300 rounded-full text-sm">JavaScript</span>
@@ -167,7 +207,7 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-xl font-semibold text-white">Biblia de fe</h3>
           <p class="text-gray-300 mt-2 text-center">Biblia Reina Valera edición 1960</p>
           <a target="_blank" href="https://play.google.com/store/apps/details?id=com.canatiystudios.bibliadefe&hl=es_NI" 
-            class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-md hover:from-blue-600 hover:to-purple-600 transition-transform transform hover:scale-105">
+            class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition-transform transform hover:scale-105">
             Ver más
           </a>
         </div>
@@ -180,7 +220,7 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-xl font-semibold text-white">Task Assigner</h3>
           <p class="text-gray-300 mt-2 text-center">Asignador de tareas aleatorio</p>
           <a target="_blank" href="https://play.google.com/store/apps/details?id=com.CanatiyStudios.TaskAssinger&hl=es_NI" 
-            class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-md hover:from-blue-600 hover:to-purple-600 transition-transform transform hover:scale-105">
+            class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition-transform transform hover:scale-105">
             Ver más
           </a>
         </div>
@@ -193,7 +233,7 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-xl font-semibold text-white">Obler</h3>
           <p class="text-gray-300 mt-2 text-center">Videojuego 2D</p>
           <a target="_blank" href="https://play.google.com/store/apps/details?id=com.CanatiyStudios.Obler&hl=es_NI" 
-            class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-md hover:from-blue-600 hover:to-purple-600 transition-transform transform hover:scale-105">
+            class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white  bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition-transform transform hover:scale-105">
             Ver más
           </a>
         </div>
@@ -206,7 +246,7 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-xl font-semibold text-white">Scribere</h3>
           <p class="text-gray-300 mt-2 text-center">Gestor de tareas universitarias</p>
           <a target="_blank" href="https://play.google.com/store/apps/details?id=com.canatiystudios.scribere&hl=es_NI" 
-            class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-md hover:from-blue-600 hover:to-purple-600 transition-transform transform hover:scale-105">
+          class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white  bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition-transform transform hover:scale-105">
             Ver más
           </a>
         </div>
@@ -219,7 +259,7 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-xl font-semibold text-white">Gestor de cultivos</h3>
           <p class="text-gray-300 mt-2 text-center">Sistema de gestión</p>
           <a target="_blank" href="https://github.com/JuanTBZA/SistemaWebGestionEmpresaAgroindustrial" 
-            class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-md hover:from-blue-600 hover:to-purple-600 transition-transform transform hover:scale-105">
+          class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white  bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition-transform transform hover:scale-105">
             Ver más
           </a>
         </div>
@@ -232,7 +272,7 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-xl font-semibold text-white">Arena Freestyle</h3>
           <p class="text-gray-300 mt-2 text-center">Sistema de venta de tickets</p>
           <a target="_blank" href="https://devdatep.com/" 
-            class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-md hover:from-blue-600 hover:to-purple-600 transition-transform transform hover:scale-105">
+          class="mt-4 inline-block px-6 py-2 text-sm font-semibold text-white  bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition-transform transform hover:scale-105">
             Ver más
           </a>
         </div>
