@@ -21,40 +21,27 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
  <!-- Sección Sobre Mí -->
-<section id="about" class="py-16 bg-gray-900 ">
+<section id="about" class="py-16 bg-gray-900">
   <div class="max-w-6xl mx-auto px-6 md:px-12 content-center">
-    
-
-    <div class="flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-12 ">
-
+    <div class="flex flex-col md:flex-row items-center md:items-center space-y-8 md:space-y-0 md:space-x-12">
       <!-- Foto de perfil -->
-
-      <div class="flex flex-col md:flex-col items-center animate-fade-in-left  ">
-
-        <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg hover:scale-105 transition-transform mb-4 ">
-          <img src="/src/assets/profile.jpg"  alt="Foto de perfil" class="w-full h-full object-cover">
+      <div class="flex flex-col items-center justify-center animate-fade-in-left">
+        <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg hover:scale-105 transition-transform mb-4">
+          <img src="/src/assets/profile.jpg" alt="Foto de perfil" class="w-full h-full object-cover">
         </div>
-
-        <div class="mt-4 flex justify-center md:justify-start gap-4 text-white">
-          <a target="_blank" href="https://www.linkedin.com/in/juan-tirado-boza/" class="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600  transition-transform transform hover:scale-105 smooth-scroll">LinkedIn</a>
-          <a target="_blank" href="https://github.com/JuanTBZA/" class="bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700 transition-transform transform hover:scale-105 smooth-scroll">GitHub</a>
+        <div class="mt-4 flex justify-center gap-4 text-white">
+          <a target="_blank" href="https://www.linkedin.com/in/juan-tirado-boza/" class="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition-transform transform hover:scale-105">LinkedIn</a>
+          <a target="_blank" href="https://github.com/JuanTBZA/" class="bg-gray-800 px-4 py-2 rounded-lg hover:bg-gray-700 transition-transform transform hover:scale-105">GitHub</a>
         </div>
-
       </div>
-      
-
-
-
       <!-- Descripción y habilidades -->
       <div class="flex-1 text-center md:text-left animate-fade-in-right">
-
         <h2 class="text-4xl font-bold text-white text-start mb-12 animate-fade-in">Sobre mí</h2>
         <p class="text-lg text-gray-300 leading-relaxed mb-6">
           Soy un desarrollador especializado en <span class="text-blue-400 font-medium">Backend y Desarrollo mobile</span>. Tengo habilidades en
-          <span class="text-blue-400 font-medium">resolución de problemas,  trabajo en equipo, adaptabilidad, gestión del tiempo y pensamiento crítico</span>. 
+          <span class="text-blue-400 font-medium">resolución de problemas, trabajo en equipo, adaptabilidad, gestión del tiempo y pensamiento crítico</span>. 
           Disfruto resolviendo problemas y aprendiendo cosas nuevas.
         </p>
-
         <!-- Contenedor de habilidades -->
         <div class="mt-8">
           <h3 class="text-2xl font-semibold text-white mb-6">Mis principales tecnologías</h3>
@@ -72,19 +59,13 @@ import Layout from '../layouts/Layout.astro';
             <div class="flex justify-center items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105"><i class="devicon-html5-plain text-4xl text-orange-600"></i></div>
             <div class="flex justify-center items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105"><i class="devicon-css3-plain text-4xl text-blue-600"></i></div>
             <div class="flex justify-center items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105"><i class="devicon-tailwindcss-original text-4xl text-teal-500"></i></div>
-            <div class="flex justify-center items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105"><i class="devicon-flutter-plain text-4xl text-blue-400"></i></div>
-            <div class="flex justify-center items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105"><i class="devicon-firebase-plain text-4xl text-yellow-500"></i></div>
-            <div class="flex justify-center items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105"><i class="devicon-git-plain text-4xl text-red-600"></i></div>
-            <div class="flex justify-center items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105"><i class="devicon-github-original text-4xl text-gray-300"></i></div>
-            <div class="flex justify-center items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105"><i class="devicon-docker-plain text-4xl text-blue-500"></i></div>
-            <div class="flex justify-center items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:bg-gray-700 transition duration-300 transform hover:scale-105"><i class="devicon-kubernetes-plain text-4xl text-blue-600"></i></div>
-            
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
  <!-- Sección de Experiencia Laboral -->
  <section id="experience" class="py-16 bg-gray-800">
@@ -286,15 +267,20 @@ import Layout from '../layouts/Layout.astro';
   <section id="contact" class="py-16 bg-gray-900 text-center">
     <h2 class="text-4xl font-bold text-white mb-6 animate-fade-in">Contacto</h2>
     <p class="text-gray-300 mb-8 animate-fade-in">¿Interesado en colaborar? ¡Escríbeme un mensaje!</p>
-    <form class="mt-8 max-w-lg mx-auto space-y-4 animate-fade-in-up">
-      <input type="text" placeholder="Tu nombre" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
-      <input type="email" placeholder="Tu correo" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
-      <textarea placeholder="Tu mensaje" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"></textarea>
+    
+    <form action="https://formspree.io/f/mldglaja" method="POST" class="mt-8 max-w-lg mx-auto space-y-4 animate-fade-in-up">
+      <input required type="text" name="name" placeholder="Tu nombre" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+      
+      <input required type="email" name="email" placeholder="Tu correo" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-white">
+      
+      <textarea required name="message" placeholder="Tu mensaje" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-white"></textarea>
+      
       <button type="submit" class="w-full px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 transition-transform transform hover:scale-105">
         Enviar Mensaje
       </button>
     </form>
   </section>
+  
 </Layout>
 
 <style>
