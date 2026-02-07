@@ -13,11 +13,11 @@ import Layout from "../layouts/Layout.astro";
   >
     <!-- Contenedor del menú (centrado y con bordes redondeados) -->
     <div
-      class="flex space-x-0 bg-gray-900/50 backdrop-blur-md rounded-full p-1 border border-gray-700/50"
+      class="flex flex-wrap justify-center gap-1 bg-gray-900/60 backdrop-blur-md rounded-2xl p-1 border border-gray-700/50 max-w-[95vw] overflow-x-auto no-scrollbar"
     >
       <a
         href="#about"
-        class="px-2 py-2 text-gray-300 text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
+        class="px-3 py-2 text-gray-300 text-xs sm:text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
       >
         <span class="relative">
           <span
@@ -28,7 +28,7 @@ import Layout from "../layouts/Layout.astro";
       </a>
       <a
         href="#experience"
-        class="px-2 py-2 text-gray-300 text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
+        class="px-3 py-2 text-gray-300 text-xs sm:text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
       >
         <span class="relative">
           <span
@@ -39,7 +39,7 @@ import Layout from "../layouts/Layout.astro";
       </a>
       <a
         href="#skills"
-        class="px-2 py-2 text-gray-300 text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
+        class="px-3 py-2 text-gray-300 text-xs sm:text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
       >
         <span class="relative">
           <span
@@ -50,7 +50,7 @@ import Layout from "../layouts/Layout.astro";
       </a>
       <a
         href="#certifications"
-        class="px-2 py-2 text-gray-300 text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
+        class="px-3 py-2 text-gray-300 text-xs sm:text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
       >
         <span class="relative">
           <span
@@ -61,7 +61,7 @@ import Layout from "../layouts/Layout.astro";
       </a>
       <a
         href="#projects"
-        class="px-2 py-2 text-gray-300 text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
+        class="px-3 py-2 text-gray-300 text-xs sm:text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
       >
         <span class="relative">
           <span
@@ -72,7 +72,7 @@ import Layout from "../layouts/Layout.astro";
       </a>
       <a
         href="#contact"
-        class="px-2 py-2 text-gray-300 text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
+        class="px-3 py-2 text-gray-300 text-xs sm:text-sm font-bold hover:text-white rounded-full transition-all duration-300 hover:bg-gray-800/30"
       >
         <span class="relative">
           <span
@@ -138,14 +138,13 @@ import Layout from "../layouts/Layout.astro";
               Juan Carlos Tirado Boza
             </h2>
             <p class="text-blue-400 font-semibold text-lg mb-6">
-              Analista QA | Backend Developer
+              QA Automation Engineer | Quality Strategy
             </p>
             <p class="text-lg text-gray-300 leading-relaxed mb-6">
-              Analista QA con experiencia en diseño, ejecución y automatización de
-              pruebas funcionales web y mobile. Combino mi dominio de Gherkin,
-              Selenium, Postman y Karate DSL con una sólida base en Java y Spring
-              Boot para validar la lógica de negocio de extremo a extremo y
-              garantizar entregas confiables dentro de pipelines CI/CD.
+              QA Automation Engineer especializado en asegurar la calidad de
+              productos digitales de punta a punta. Diseño estrategias de prueba,
+              automatización escalable y observabilidad de calidad para equipos
+              ágiles que necesitan despliegues frecuentes y confiables.
             </p>
             <ul class="space-y-2 text-gray-300">
               <li class="flex items-start gap-2">
@@ -153,8 +152,8 @@ import Layout from "../layouts/Layout.astro";
                   <i class="fas fa-check-circle"></i>
                 </span>
                 <span>
-                  Reduje defectos en producción mediante planes de prueba
-                  orientados a riesgo y la trazabilidad completa en Jira xRay.
+                  Estrategias de QA automation con cobertura UI, API y contratos,
+                  integradas a CI/CD con métricas de calidad en tiempo real.
                 </span>
               </li>
               <li class="flex items-start gap-2">
@@ -162,8 +161,8 @@ import Layout from "../layouts/Layout.astro";
                   <i class="fas fa-check-circle"></i>
                 </span>
                 <span>
-                  Optimicé tiempos de validación automatizando escenarios críticos
-                  con Selenium y Karate DSL integrados en pipelines CI/CD.
+                  Diseño de frameworks de pruebas reutilizables con reporting
+                  ejecutivo y trazabilidad completa de defectos.
                 </span>
               </li>
               <li class="flex items-start gap-2">
@@ -171,62 +170,31 @@ import Layout from "../layouts/Layout.astro";
                   <i class="fas fa-check-circle"></i>
                 </span>
                 <span>
-                  Capacidad para analizar y reforzar la lógica backend gracias a mi
-                  experiencia construyendo APIs con Java, Spring Boot y Laravel.
+                  Experiencia validando microservicios, flujos críticos y
+                  performance para asegurar entregas sin regresiones.
                 </span>
               </li>
             </ul>
 
             <div class="mt-8">
-              <h3 class="text-2xl font-semibold text-white mb-4">
-                Tecnologías principales
-              </h3>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div
-                  class="p-4 bg-gray-800/40 border border-gray-700/60 rounded-xl shadow hover:bg-gray-700/40 transition"
-                >
-                  <h4 class="text-white font-semibold text-lg">
-                    QA & Testing
-                  </h4>
-                  <div class="flex flex-wrap gap-2 mt-3">
-                    <span class="chip">Gherkin</span>
-                    <span class="chip">Selenium</span>
-                    <span class="chip">Karate DSL</span>
-                    <span class="chip">Postman</span>
-                    <span class="chip">JUnit</span>
-                    <span class="chip">Serenity BDD</span>
-                  </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="stat-card">
+                  <p class="text-sm text-gray-400">Especialidad</p>
+                  <p class="text-white text-lg font-semibold">
+                    QA Automation End-to-End
+                  </p>
                 </div>
-                <div
-                  class="p-4 bg-gray-800/40 border border-gray-700/60 rounded-xl shadow hover:bg-gray-700/40 transition"
-                >
-                  <h4 class="text-white font-semibold text-lg">
-                    Backend & APIs
-                  </h4>
-                  <div class="flex flex-wrap gap-2 mt-3">
-                    <span class="chip">Java</span>
-                    <span class="chip">Spring Boot</span>
-                    <span class="chip">PHP</span>
-                    <span class="chip">Laravel</span>
-                    <span class="chip">Dart</span>
-                    <span class="chip">Flutter</span>
-                  </div>
+                <div class="stat-card">
+                  <p class="text-sm text-gray-400">Enfoque</p>
+                  <p class="text-white text-lg font-semibold">
+                    Calidad continua en CI/CD
+                  </p>
                 </div>
-                <div
-                  class="p-4 bg-gray-800/40 border border-gray-700/60 rounded-xl shadow hover:bg-gray-700/40 transition"
-                >
-                  <h4 class="text-white font-semibold text-lg">
-                    Datos & DevOps
-                  </h4>
-                  <div class="flex flex-wrap gap-2 mt-3">
-                    <span class="chip">PostgreSQL</span>
-                    <span class="chip">MySQL</span>
-                    <span class="chip">SQL Server</span>
-                    <span class="chip">MongoDB</span>
-                    <span class="chip">Git</span>
-                    <span class="chip">Docker</span>
-                    <span class="chip">AWS</span>
-                  </div>
+                <div class="stat-card">
+                  <p class="text-sm text-gray-400">Entrega</p>
+                  <p class="text-white text-lg font-semibold">
+                    Métricas & reporting accionable
+                  </p>
                 </div>
               </div>
             </div>
@@ -239,152 +207,96 @@ import Layout from "../layouts/Layout.astro";
   <!-- Sección de Experiencia Laboral -->
   <section id="experience" class="py-16 bg-gray-800">
     <div class="max-w-6xl mx-auto px-6 md:px-12">
-      <h2
-        class="text-4xl font-bold text-white text-center mb-12 animate-fade-in"
-      >
-        Experiencia Laboral
-      </h2>
+      <div class="section-header">
+        <h2 class="section-title">Experiencia QA</h2>
+        <p class="section-subtitle">
+          Lidero iniciativas de QA automation con foco en calidad continua y
+          entregas sin regresiones.
+        </p>
+      </div>
 
-      <!-- Contenedor de la línea de tiempo -->
-      <div class="relative">
-        <!-- Línea vertical -->
-        <div
-          class="absolute left-4 md:left-8 w-1 bg-gray-600 h-full animate-draw-line"
-        ></div>
-
-        <!-- Experiencia 1 -->
-        <div class="flex items-start mb-10">
-          <!-- Punto en la línea -->
-          <div
-            class="absolute left-4 md:left-8 w-4 h-4 bg-blue-500 rounded-full z-10 -translate-x-1/2 mt-10"
-          ></div>
-          <!-- Carta de experiencia -->
-          <div
-            class="ml-12 md:ml-16 w-full px-6 py-8 bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-[0.99]"
-          >
-            <h3 class="text-2xl font-semibold text-white">
-              Analista QA · Cliente BBVA
-            </h3>
-            <p class="text-gray-300">NTT DATA</p>
-            <p class="text-gray-400 text-sm">Junio 2025 – Actualidad</p>
-            <div class="text-gray-300 mt-4">
-              <ul class="list-disc pl-5 space-y-2">
-                <li>
-                  Diseño, ejecución y automatización de pruebas funcionales en
-                  Gherkin para canales web y mobile críticos.
-                </li>
-                <li>
-                  Gestión integral de defectos y trazabilidad en Jira xRay para
-                  asegurar documentación y seguimiento oportuno.
-                </li>
-                <li>
-                  Integración de suites automatizadas en pipelines CI/CD,
-                  asegurando despliegues con métricas de calidad visibles.
-                </li>
-              </ul>
-            </div>
-            <div class="mt-4">
-              <span class="text-sm text-gray-400">Tecnologías:</span>
-              <div class="flex flex-wrap gap-2 mt-2">
-                <span class="chip">Gherkin</span>
-                <span class="chip">Selenium</span>
-                <span class="chip">Karate DSL</span>
-                <span class="chip">Postman</span>
-                <span class="chip">Jira xRay</span>
-                <span class="chip">CI/CD</span>
-              </div>
-            </div>
+      <div class="grid gap-6">
+        <article class="experience-card">
+          <div>
+            <h3>QA Automation Engineer · Cliente BBVA</h3>
+            <p class="role-meta">NTT DATA · Junio 2025 – Actualidad</p>
           </div>
-        </div>
-
-        <!-- Experiencia 2 -->
-        <div class="flex items-start mb-10">
-          <!-- Punto en la línea -->
-          <div
-            class="absolute left-4 md:left-8 w-4 h-4 bg-blue-500 rounded-full z-10 -translate-x-1/2 mt-10"
-          ></div>
-          <!-- Carta de experiencia -->
-          <div
-            class="ml-12 md:ml-16 w-full px-6 py-8 bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-[0.99]"
-          >
-            <h3 class="text-2xl font-semibold text-white">
-              Desarrollador Backend
-            </h3>
-            <p class="text-gray-300">Zeytol S.A.C.</p>
-            <p class="text-gray-400 text-sm">Marzo 2025 – Junio 2025</p>
-            <div class="text-gray-300 mt-4">
-              <ul class="list-disc pl-5 space-y-2">
-                <li>
-                  Construcción de soluciones backend en Java con Spring Boot para
-                  apoyar la operación de TuChamba.
-                </li>
-                <li>
-                  Integración con PostgreSQL mediante Hibernate y consultas
-                  optimizadas para datos de alto volumen.
-                </li>
-                <li>
-                  Diseño de APIs RESTful con buenas prácticas de seguridad y
-                  versionamiento.
-                </li>
-              </ul>
-            </div>
-            <div class="mt-4">
-              <span class="text-sm text-gray-400">Tecnologías:</span>
-              <div class="flex flex-wrap gap-2 mt-2">
-                <span class="chip">Java</span>
-                <span class="chip">Spring Boot</span>
-                <span class="chip">Spring Security</span>
-                <span class="chip">PostgreSQL</span>
-                <span class="chip">Hibernate</span>
-                <span class="chip">REST API</span>
-              </div>
-            </div>
+          <ul>
+            <li>
+              Arquitectura de suites automatizadas UI/API con Gherkin + Selenium
+              y Karate DSL para canales críticos.
+            </li>
+            <li>
+              Integración de pruebas en pipelines CI/CD con reportes de calidad y
+              gates de despliegue.
+            </li>
+            <li>
+              Observabilidad de calidad con trazabilidad end-to-end en Jira Xray
+              y gestión de riesgos.
+            </li>
+          </ul>
+          <div class="tag-group">
+            <span class="chip">QA Automation</span>
+            <span class="chip">Selenium</span>
+            <span class="chip">Karate DSL</span>
+            <span class="chip">Jira Xray</span>
+            <span class="chip">CI/CD</span>
           </div>
-        </div>
+        </article>
 
-        <!-- Experiencia 3 -->
-        <div class="flex items-start mb-10">
-          <!-- Punto en la línea -->
-          <div
-            class="absolute left-4 md:left-8 w-4 h-4 bg-blue-500 rounded-full z-10 -translate-x-1/2 mt-10"
-          ></div>
-          <!-- Carta de experiencia -->
-          <div
-            class="ml-12 md:ml-16 w-full px-6 py-8 bg-gray-700 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-[0.99]"
-          >
-            <h3 class="text-2xl font-semibold text-white">
-              Desarrollador Backend
-            </h3>
-            <p class="text-gray-300">Devdatep Consulting</p>
-            <p class="text-gray-400 text-sm">Noviembre 2024 – Marzo 2025</p>
-            <div class="text-gray-300 mt-4">
-              <ul class="list-disc pl-5 space-y-2">
-                <li>
-                  Desarrollo de APIs RESTful en Laravel para plataformas web de
-                  gestión y ventas.
-                </li>
-                <li>
-                  Colaboración con equipos frontend y DBAs para optimizar flujos
-                  de datos y la experiencia de usuario.
-                </li>
-                <li>
-                  Reducción del tiempo de respuesta de las APIs en un 40% mediante
-                  refactorizaciones y caching selectivo.
-                </li>
-              </ul>
-            </div>
-            <div class="mt-4">
-              <span class="text-sm text-gray-400">Tecnologías:</span>
-              <div class="flex flex-wrap gap-2 mt-2">
-                <span class="chip">Laravel</span>
-                <span class="chip">PHP</span>
-                <span class="chip">MySQL</span>
-                <span class="chip">Git</span>
-                <span class="chip">REST API</span>
-              </div>
-            </div>
+        <article class="experience-card">
+          <div>
+            <h3>QA Automation Engineer</h3>
+            <p class="role-meta">Zeytol S.A.C. · Marzo 2025 – Junio 2025</p>
           </div>
-        </div>
+          <ul>
+            <li>
+              Automatización de pruebas de APIs y contratos para garantizar la
+              estabilidad de microservicios.
+            </li>
+            <li>
+              Diseño de matrices de riesgo y estrategias de regresión
+              aceleradas por datos.
+            </li>
+            <li>
+              Reportes ejecutivos con métricas de defectos, cobertura y
+              tendencias de calidad.
+            </li>
+          </ul>
+          <div class="tag-group">
+            <span class="chip">API Testing</span>
+            <span class="chip">Postman</span>
+            <span class="chip">JUnit</span>
+            <span class="chip">Quality Metrics</span>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div>
+            <h3>QA Automation Specialist</h3>
+            <p class="role-meta">
+              Devdatep Consulting · Noviembre 2024 – Marzo 2025
+            </p>
+          </div>
+          <ul>
+            <li>
+              Implementación de pruebas de regresión automatizadas para
+              plataformas web con Selenium y Serenity BDD.
+            </li>
+            <li>
+              Validación de performance y smoke tests para releases críticos.
+            </li>
+            <li>
+              Coordinación con producto y desarrollo para priorizar calidad y
+              optimizar tiempos de entrega.
+            </li>
+          </ul>
+          <div class="tag-group">
+            <span class="chip">Serenity BDD</span>
+            <span class="chip">Performance</span>
+            <span class="chip">Regression</span>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -392,33 +304,37 @@ import Layout from "../layouts/Layout.astro";
   <!-- Sección de Habilidades -->
   <section id="skills" class="py-16 bg-gray-900">
     <div class="max-w-6xl mx-auto px-6 md:px-12">
-      <h2 class="text-4xl font-bold text-white text-center mb-12">
-        Habilidades Técnicas
-      </h2>
+      <div class="section-header">
+        <h2 class="section-title">Stack QA Automation</h2>
+        <p class="section-subtitle">
+          Herramientas y prácticas para asegurar calidad continua en todo el
+          ciclo de vida.
+        </p>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="skill-card">
-          <h3>Lenguajes de Programación</h3>
-          <p>Java, PHP, Dart, TypeScript, JavaScript</p>
+          <h3>Automatización UI</h3>
+          <p>Selenium, Serenity BDD, Page Object, Gherkin, Reportes</p>
         </div>
         <div class="skill-card">
-          <h3>Frameworks y Librerías</h3>
-          <p>Spring Boot, Spring Security, Laravel, Flutter</p>
+          <h3>APIs y Contratos</h3>
+          <p>Postman, Karate DSL, REST Assured, Swagger, Mocking</p>
         </div>
         <div class="skill-card">
-          <h3>Bases de Datos</h3>
-          <p>MySQL, SQL Server, PostgreSQL, MongoDB, Oracle</p>
+          <h3>Calidad Continua</h3>
+          <p>CI/CD, Quality Gates, SonarQube, Coverage, Risk-Based Testing</p>
         </div>
         <div class="skill-card">
-          <h3>Testing y Calidad</h3>
-          <p>JUnit, Mockito, Postman, Bruno, SonarQube, Karate, Gherkin, Serenity BDD</p>
+          <h3>Performance</h3>
+          <p>JMeter, pruebas de carga, stress testing, métricas de SLA</p>
         </div>
         <div class="skill-card">
-          <h3>Herramientas</h3>
-          <p>Git, Docker, Swagger, AWS (EC2, RDS, S3)</p>
+          <h3>Gestión QA</h3>
+          <p>Jira Xray, trazabilidad, planes de prueba, matrices de riesgo</p>
         </div>
         <div class="skill-card">
-          <h3>Buenas Prácticas</h3>
-          <p>RESTful APIs, Microservicios, JWT, HTML, CSS, Tailwind, Scrum</p>
+          <h3>Stack Técnico</h3>
+          <p>Java, Spring Boot, SQL, Git, Docker, AWS, Microservicios</p>
         </div>
       </div>
     </div>
@@ -434,50 +350,86 @@ import Layout from "../layouts/Layout.astro";
         <div class="cert-card">
           <h3>JMeter, Postman & SoapUI</h3>
           <p>Galaxy Training · 2025</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Curso de Base de Datos PostgreSQL</h3>
           <p>Udemy · 2025</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Selenium &amp; Cucumber BDD</h3>
           <p>Galaxy Training · 2025</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Spring Boot Advanced Developer</h3>
           <p>Galaxy Training · 2025</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Curso de Base de Datos MySQL</h3>
           <p>Udemy · 2025</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Entrenamiento Microsoft SQL Server</h3>
           <p>Udemy · 2025</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Curso profesional de Git</h3>
           <p>Código Facilito · 2025</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Curso de Base de Datos MySQL Server</h3>
           <p>Udemy · 2025</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Spring Framework 6 &amp; Spring Boot 3</h3>
           <p>Udemy · 2025</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Arquitectura de Microservicios con Spring</h3>
           <p>Codearti · 2025</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Scrum Fundamentals Certified</h3>
           <p>SCRUMstudy · 2024</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
         <div class="cert-card">
           <h3>Gestión ágil de proyectos (SCRUM)</h3>
           <p>Campus Romero · 2024</p>
+          <a class="cert-link" href="#" target="_blank"
+            >Ver certificado</a
+          >
         </div>
       </div>
     </div>
@@ -488,180 +440,213 @@ import Layout from "../layouts/Layout.astro";
     <h2 class="text-4xl font-bold text-center text-white mb-8 animate-fade-in">
       Proyectos
     </h2>
-    <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 md:px-12"
-    >
+    <div class="space-y-8 max-w-6xl mx-auto px-6 md:px-12">
       <!-- TuChamba -->
-      <div
-        class="bg-gray-800/70 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-[1.02] hover:shadow-2xl animate-fade-in-up"
-      >
-        <img
-          src="/app6.png"
-          alt="TuChamba"
-          class="w-full h-48 object-cover"
-        />
-        <div class="p-6 flex flex-col">
-          <h3 class="text-xl font-semibold text-white">TuChamba</h3>
-          <p class="text-gray-300 mt-2">
-            Plataforma web para conectar talento freelance y ofertas laborales,
-            habilitando postulaciones rápidas y paneles de seguimiento.
+      <article class="project-card">
+        <div class="project-media">
+          <img src="/app6.png" alt="TuChamba" />
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>TuChamba</h3>
+            <p class="project-meta">
+              Zeytol S.A.C. · Marzo 2025 – Mayo 2025
+            </p>
+          </div>
+          <p>
+            Lideré la estrategia de QA automation para flujos críticos de
+            postulaciones y paneles de seguimiento, garantizando releases sin
+            regresiones.
           </p>
-          <p class="text-gray-400 text-sm mt-3">Zeytol S.A.C. · Marzo 2025 – Mayo 2025</p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="chip">Spring Boot</span>
-            <span class="chip">PostgreSQL</span>
-            <span class="chip">Hibernate</span>
-            <span class="chip">REST API</span>
+          <ul>
+            <li>Suite E2E con Selenium + Gherkin.</li>
+            <li>Pruebas de API y contratos con Karate DSL.</li>
+            <li>Quality gates en CI/CD con métricas de cobertura.</li>
+          </ul>
+          <div class="tag-group">
+            <span class="chip">E2E</span>
+            <span class="chip">Karate DSL</span>
+            <span class="chip">CI/CD</span>
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Arena Freestyle -->
-      <div
-        class="bg-gray-800/70 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-[1.02] hover:shadow-2xl animate-fade-in-up"
-      >
-        <img
-          src="/app5.png"
-          alt="Arena Freestyle"
-          class="w-full h-48 object-cover"
-        />
-        <div class="p-6 flex flex-col">
-          <h3 class="text-xl font-semibold text-white">Arena Freestyle</h3>
-          <p class="text-gray-300 mt-2">
-            Sistema para gestionar eventos, venta de entradas y seguimiento en
-            tiempo real de competencias de freestyle y otros géneros.
+      <article class="project-card">
+        <div class="project-media">
+          <img src="/app5.png" alt="Arena Freestyle" />
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>Arena Freestyle</h3>
+            <p class="project-meta">
+              Devdatep Consulting · Noviembre 2024 – Marzo 2025
+            </p>
+          </div>
+          <p>
+            Aseguré la calidad de un sistema de eventos con pruebas funcionales
+            automatizadas y validaciones de performance antes de lanzamientos.
           </p>
-          <p class="text-gray-400 text-sm mt-3">Devdatep Consulting · Noviembre 2024 – Marzo 2025</p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="chip">Laravel</span>
-            <span class="chip">MySQL</span>
-            <span class="chip">Tailwind</span>
-            <span class="chip">APIs REST</span>
+          <ul>
+            <li>Automatización UI con Serenity BDD.</li>
+            <li>Pruebas de carga con JMeter.</li>
+            <li>Monitoreo de defectos y métricas de calidad.</li>
+          </ul>
+          <div class="tag-group">
+            <span class="chip">Serenity BDD</span>
+            <span class="chip">JMeter</span>
+            <span class="chip">Quality Metrics</span>
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Scribere -->
-      <div
-        class="bg-gray-800/70 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-[1.02] hover:shadow-2xl animate-fade-in-up"
-      >
-        <img src="/app4.png" alt="Scribere" class="w-full h-48 object-cover" />
-        <div class="p-6 flex flex-col">
-          <h3 class="text-xl font-semibold text-white">Scribere</h3>
-          <p class="text-gray-300 mt-2">
-            Aplicación móvil para organizar tareas universitarias con recordatorios
-            y seguimiento de entregas.
-          </p>
-          <p class="text-gray-400 text-sm mt-3">Canatiy Studios · Octubre 2024 – Diciembre 2024</p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="chip">Flutter</span>
-            <span class="chip">Firebase</span>
-            <span class="chip">Dart</span>
+      <article class="project-card">
+        <div class="project-media">
+          <img src="/app4.png" alt="Scribere" />
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>Scribere</h3>
+            <p class="project-meta">
+              Canatiy Studios · Octubre 2024 – Diciembre 2024
+            </p>
           </div>
-          <div class="mt-6 flex gap-3">
+          <p>
+            Implementé pruebas automatizadas para flujos móviles críticos y
+            regresiones continuas en cada sprint.
+          </p>
+          <ul>
+            <li>Casos E2E con validación de notificaciones.</li>
+            <li>Smoke tests y sanity checks por release.</li>
+            <li>Checklist de calidad y UX consistency.</li>
+          </ul>
+          <div class="tag-group">
+            <span class="chip">Mobile QA</span>
+            <span class="chip">E2E</span>
+            <span class="chip">Regression</span>
+          </div>
+          <div class="project-links">
             <a
               target="_blank"
               href="https://play.google.com/store/apps/details?id=com.canatiystudios.scribere&hl=es_NI"
-              class="flex-1 inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition-transform transform hover:scale-105 text-center"
             >
               <i class="fas fa-external-link-alt mr-1"></i> Preview
             </a>
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Biblia de fe -->
-      <div
-        class="bg-gray-800/70 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-[1.02] hover:shadow-2xl animate-fade-in-up"
-      >
-        <img
-          src="/app1.png"
-          alt="Biblia de fe"
-          class="w-full h-48 object-cover"
-        />
-        <div class="p-6 flex flex-col">
-          <h3 class="text-xl font-semibold text-white">Biblia de fe</h3>
-          <p class="text-gray-300 mt-2">
-            Aplicación móvil con lectura offline de la Biblia Reina Valera y
-            navegación intuitiva por libros y capítulos.
-          </p>
-          <p class="text-gray-400 text-sm mt-3">Canatiy Studios · Enero 2024 – Abril 2024</p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="chip">Flutter</span>
-            <span class="chip">Dart</span>
-            <span class="chip">SQLite</span>
+      <article class="project-card">
+        <div class="project-media">
+          <img src="/app1.png" alt="Biblia de fe" />
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>Biblia de fe</h3>
+            <p class="project-meta">
+              Canatiy Studios · Enero 2024 – Abril 2024
+            </p>
           </div>
-          <div class="mt-6 flex gap-3">
+          <p>
+            Establecí QA automation para validación offline y sincronización de
+            contenido, asegurando experiencia estable en mobile.
+          </p>
+          <ul>
+            <li>Pruebas de persistencia y sincronización.</li>
+            <li>Regresión automatizada por versiones.</li>
+            <li>Validación de rendimiento en dispositivos reales.</li>
+          </ul>
+          <div class="tag-group">
+            <span class="chip">Mobile QA</span>
+            <span class="chip">Offline</span>
+            <span class="chip">Performance</span>
+          </div>
+          <div class="project-links">
             <a
               target="_blank"
               href="https://play.google.com/store/apps/details?id=com.canatiystudios.bibliadefe&hl=es_NI"
-              class="flex-1 inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition-transform transform hover:scale-105 text-center"
             >
               <i class="fas fa-external-link-alt mr-1"></i> Preview
             </a>
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Obler -->
-      <div
-        class="bg-gray-800/70 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-[1.02] hover:shadow-2xl animate-fade-in-up"
-      >
-        <img src="/app3.png" alt="Obler" class="w-full h-48 object-cover" />
-        <div class="p-6 flex flex-col">
-          <h3 class="text-xl font-semibold text-white">Obler</h3>
-          <p class="text-gray-300 mt-2">
-            Videojuego 2D de exploración espacial con combates y progresión de
-            habilidades en un entorno futurista.
-          </p>
-          <p class="text-gray-400 text-sm mt-3">Canatiy Studios · Febrero 2023 – Marzo 2023</p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="chip">Unity</span>
-            <span class="chip">C#</span>
+      <article class="project-card">
+        <div class="project-media">
+          <img src="/app3.png" alt="Obler" />
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>Obler</h3>
+            <p class="project-meta">
+              Canatiy Studios · Febrero 2023 – Marzo 2023
+            </p>
           </div>
-          <div class="mt-6 flex gap-3">
+          <p>
+            Diseñé planes de QA para gameplay y estabilidad, validando flujos de
+            progreso y balance en entornos Unity.
+          </p>
+          <ul>
+            <li>Checklist de jugabilidad y regresión.</li>
+            <li>Pruebas de rendimiento en hardware diverso.</li>
+            <li>Seguimiento de bugs críticos con evidencia visual.</li>
+          </ul>
+          <div class="tag-group">
+            <span class="chip">Game QA</span>
+            <span class="chip">Unity</span>
+            <span class="chip">Performance</span>
+          </div>
+          <div class="project-links">
             <a
               target="_blank"
               href="https://play.google.com/store/apps/details?id=com.CanatiyStudios.Obler&hl=es_NI"
-              class="flex-1 inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition-transform transform hover:scale-105 text-center"
             >
               <i class="fas fa-external-link-alt mr-1"></i> Preview
             </a>
           </div>
         </div>
-      </div>
+      </article>
 
       <!-- Task Asigner -->
-      <div
-        class="bg-gray-800/70 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-[1.02] hover:shadow-2xl animate-fade-in-up"
-      >
-        <img
-          src="/app2.png"
-          alt="Task Asigner"
-          class="w-full h-48 object-cover"
-        />
-        <div class="p-6 flex flex-col">
-          <h3 class="text-xl font-semibold text-white">Task Asigner</h3>
-          <p class="text-gray-300 mt-2">
-            Aplicación para asignar tareas de forma aleatoria y equitativa entre
-            miembros de un equipo.
-          </p>
-          <p class="text-gray-400 text-sm mt-3">Canatiy Studios · Diciembre 2022 – Febrero 2023</p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="chip">Android Studio</span>
-            <span class="chip">Java</span>
+      <article class="project-card">
+        <div class="project-media">
+          <img src="/app2.png" alt="Task Asigner" />
+        </div>
+        <div class="project-body">
+          <div>
+            <h3>Task Asigner</h3>
+            <p class="project-meta">
+              Canatiy Studios · Diciembre 2022 – Febrero 2023
+            </p>
           </div>
-          <div class="mt-6 flex gap-3">
+          <p>
+            Automatización de pruebas para lógica de asignación y validación de
+            fairness en la distribución de tareas del equipo.
+          </p>
+          <ul>
+            <li>Pruebas funcionales y de regresión.</li>
+            <li>Validación de integridad de datos en SQLite.</li>
+            <li>Checklist QA para releases móviles.</li>
+          </ul>
+          <div class="tag-group">
+            <span class="chip">Mobile QA</span>
+            <span class="chip">SQLite</span>
+            <span class="chip">Regression</span>
+          </div>
+          <div class="project-links">
             <a
               target="_blank"
               href="https://play.google.com/store/apps/details?id=com.CanatiyStudios.TaskAssinger&hl=es_NI"
-              class="flex-1 inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-500 hover:bg-blue-600 rounded-full shadow-md transition-transform transform hover:scale-105 text-center"
             >
               <i class="fas fa-external-link-alt mr-1"></i> Preview
             </a>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   </section>
 
@@ -738,7 +723,7 @@ import Layout from "../layouts/Layout.astro";
         <!-- Logo y derechos -->
         <div class="mb-6 md:mb-0 text-center md:text-left">
           <h3 class="text-2xl font-bold text-white">Juan Carlos Tirado Boza</h3>
-          <p class="text-gray-400 mt-2">Analista QA & Backend Developer</p>
+          <p class="text-gray-400 mt-2">QA Automation Engineer</p>
           <p class="text-gray-500 text-sm mt-4">
             © 2025 Todos los derechos reservados
           </p>
@@ -956,6 +941,41 @@ import Layout from "../layouts/Layout.astro";
     font-weight: 500;
   }
 
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    color: #ffffff;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+
+  .section-subtitle {
+    color: #9ca3af;
+    max-width: 640px;
+    margin: 0.75rem auto 0;
+    line-height: 1.7;
+  }
+
+  .stat-card {
+    background: linear-gradient(135deg, rgba(31, 41, 55, 0.7), rgba(17, 24, 39, 0.9));
+    border: 1px solid rgba(55, 65, 81, 0.6);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+  }
+
   .skill-card {
     background-color: rgba(31, 41, 55, 0.5);
     border: 1px solid rgba(55, 65, 81, 0.6);
@@ -1005,6 +1025,124 @@ import Layout from "../layouts/Layout.astro";
   .cert-card p {
     color: #9ca3af;
     margin-top: 0.5rem;
+  }
+
+  .cert-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 0.75rem;
+    color: #60a5fa;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+
+  .cert-link:hover {
+    color: #93c5fd;
+  }
+
+  .experience-card {
+    background: rgba(31, 41, 55, 0.6);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 1rem;
+    padding: 1.75rem;
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2);
+    display: grid;
+    gap: 1rem;
+  }
+
+  .experience-card h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .role-meta {
+    color: #94a3b8;
+    font-size: 0.95rem;
+  }
+
+  .experience-card ul {
+    color: #d1d5db;
+    display: grid;
+    gap: 0.5rem;
+    padding-left: 1.25rem;
+    list-style: disc;
+  }
+
+  .tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .project-card {
+    background: rgba(17, 24, 39, 0.65);
+    border: 1px solid rgba(55, 65, 81, 0.6);
+    border-radius: 1.25rem;
+    overflow: hidden;
+    display: grid;
+    gap: 0;
+  }
+
+  .project-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 220px;
+  }
+
+  .project-body {
+    padding: 1.75rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .project-body h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .project-body p {
+    color: #d1d5db;
+  }
+
+  .project-meta {
+    color: #94a3b8;
+    font-size: 0.95rem;
+  }
+
+  .project-body ul {
+    list-style: disc;
+    padding-left: 1.25rem;
+    color: #d1d5db;
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .project-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: rgba(59, 130, 246, 0.2);
+    color: #bfdbfe;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    width: fit-content;
+  }
+
+  .project-links a:hover {
+    background: rgba(59, 130, 246, 0.35);
+  }
+
+  @media (min-width: 768px) {
+    .project-card {
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.8fr);
+    }
   }
 </style>
 
